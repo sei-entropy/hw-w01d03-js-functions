@@ -28,23 +28,26 @@
 
 Method 1
 ```
-Name:
-Description:
-Example using it:
+Name:indexOf()
+Description:return the index of postion of the word that first occurrence 
+Example let fullname = "Mohammed Alhadab";
+        let posion = fullname.indexOf("Alhadab");
 ```
 
 Method 2
 ```
-Name:
-Description:
-Example using it:
+Name:lastIndexOf()
+Description:return the last index of text that first occurrence in the text
+Example let fullname = "Mohammed Alhadab";
+        let posion = fullname.lastIndexOf("Alhadab");
 ```
 
 Method 3
 ```
-Name:
-Description:
-Example using it:
+Name:replace()
+Description: repelece the string that match and replace it and the method case sensitive
+Example let str = "Please visit call me!";
+        let n = str.replace("call", "hello");
 ```
 
 ## [License](LICENSE)
