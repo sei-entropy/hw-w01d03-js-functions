@@ -28,23 +28,32 @@
 
 Method 1
 ```
-Name:
-Description:
-Example using it:
+Name: indexOf()
+Description: return the first position (occurence) of a substring in the string. 
+Example using it: 
+let str = 'Javascript is really awesome!'; 
+let position = str.indexOf('script');
+// returned value: 4 
 ```
 
 Method 2
 ```
-Name:
-Description:
-Example using it:
+Name: replace()
+Description: replace a substring with a different value. 
+Example using it: 
+let str = 'Please visit Misk!'; 
+let newStr = str.replace('Misk', 'Alfaisal');
+// returned value: "Please visit Alfaisal!"
 ```
 
 Method 3
 ```
-Name:
-Description:
+Name: toLowerCase()
+Description: return the string with all characters lowercase 
 Example using it:
+let str = 'SomEThing'; 
+let newStr = str.toLowerCase();
+// returned value: "something"
 ```
 
 ## [License](LICENSE)
