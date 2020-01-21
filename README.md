@@ -28,23 +28,30 @@
 
 Method 1
 ```
-Name:
-Description:
-Example using it:
+Name: toUpperCase()
+Description: transform text to upper case. 
+Example using it: 
+let str= 'hello , hi '; 
+let strUp=str.toUpperCase();
 ```
 
 Method 2
 ```
-Name:
-Description:
+Name: toLowerCase()
+Description:transform text to LowerCase.
 Example using it:
+let str= 'hello , hi '; 
+let strUp=str.toLowerCase();
 ```
 
 Method 3
 ```
-Name:
-Description:
-Example using it:
+Name: replace()
+Description: to replace any word in the string with another. 
+Example using it: 
+let string = "is math related to science!";
+let reString = string.replace("related to", " IS ");
+
 ```
 
 ## [License](LICENSE)
