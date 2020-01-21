@@ -28,23 +28,33 @@
 
 Method 1
 ```
-Name:
-Description:
-Example using it:
+Name: concat() 
+Description: 
+it is used to joins two or more strings
+Example using it
+:var text1 = "Hello";
+var text2 = "World";
+var text3 = text1.concat(" ", text2);
 ```
 
 Method 2
 ```
-Name:
+Name: charAt()
 Description:
-Example using it:
+ This method is usefull for searshing for a specified charecter in string which is returns the character at a specified index (position) in a string
+Example using it: 
+var str = "HELLO WORLD";
+str.charAt(0);            // returns H 
 ```
 
 Method 3
 ```
-Name:
+Name: replace()
 Description:
+This method replaces a specified value with another value in a string
 Example using it:
+str = "Please visit Microsoft!";
+var n = str.replace("Microsoft", "W3Schools");
 ```
 
 ## [License](LICENSE)
