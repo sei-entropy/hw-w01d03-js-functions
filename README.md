@@ -28,23 +28,26 @@
 
 Method 1
 ```
-Name:
-Description:
-Example using it:
+Name: replace()
+Description: replaces a specified value in a string with a specified value.
+Example using it: let str = "Ahmed went home."
+                  str.replace("Ahmed", "Faisal"); // str = "Faisal went home."
 ```
 
 Method 2
 ```
-Name:
-Description:
-Example using it:
+Name: toUpperCase()
+Description: convert all letter in a string to upper case letters
+Example using it: str = "Hello";
+                  str.toUpperCase(); // str = "HELLO"
 ```
 
 Method 3
 ```
-Name:
-Description:
-Example using it:
+Name: toLowerCase()
+Description: convert all letter in a string to lower case letters
+Example using it: str = "HELLO";
+                  str.toLowerCase(); // str = "hello"
 ```
 
 ## [License](LICENSE)
