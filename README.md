@@ -28,23 +28,26 @@
 
 Method 1
 ```
-Name:
-Description:
-Example using it:
+Name:search()
+Description:it's returns the position of the first occurrence of a specified text in a string.
+Example using it: let test = "there was a cat";
+                  let result = test.search("cat");
 ```
 
 Method 2
 ```
-Name:
-Description:
-Example using it:
+Name:slice() 
+Description:slice() extracts a part of a string and returns the extracted part in a new string. The method takes 2 parameters: the start position, and the end position
+Example using it: let test = "one,Two,Three";
+                   let result = test.slice(4,7);
 ```
 
 Method 3
 ```
-Name:
-Description:
-Example using it:
+Name:String Length
+Description:it's returns the length of a string
+Example using it: let test = "NajwaAlmutairi";
+                  let result = test.length;
 ```
 
 ## [License](LICENSE)
