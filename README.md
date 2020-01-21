@@ -28,23 +28,37 @@
 
 Method 1
 ```
-Name:
-Description:
+Name: substring
+Description: the order of the arguments doesn't matter, so substring(1, 4) is the same as substring(4, 1).
 Example using it:
+let Str = 'JavaScript string methods | JS Functions HW'
+
+str.substring(4,0) \\ return Java 
+str.substring(0,4)  \\ return Java
 ```
 
 Method 2
 ```
-Name:
-Description:
+Name: slice
+Description: order does matter, so slice(4, 1) will just yield an empty string.
 Example using it:
+let Str = 'JavaScript string methods | JS Functions HW'
+
+str.slice(4,0) \\ return empty string
+str.slice(0,4)  \\  return Java
 ```
 
 Method 3
 ```
-Name:
-Description:
+Name: prototype
+Description: In this function we can add new properties and methods to existing object types.
+Note: Prototype is a global property which is available with almost all JavaScript objects.
 Example using it:
+function testFunction(name) {
+  name  = " Raghad Alabdulwahab " ;  
+}
+testFunction.prototype.name = " Raghad Mohammed ";
+\\ will return Raghad Mohammed
 ```
 
 ## [License](LICENSE)
