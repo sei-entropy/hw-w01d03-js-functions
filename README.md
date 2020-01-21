@@ -28,23 +28,24 @@
 
 Method 1
 ```
-Name:
-Description:
+Name:indexOf()
+Description: The indexOf() method returns the index of (the position of) the first occurrence of a specified text in a string
 Example using it:
+var str = "Please locate where 'locate' occurs!";
+var pos = str.indexOf("locate");
 ```
-
 Method 2
 ```
-Name:
-Description:
-Example using it:
+Name:lastIndexOf()
+Description:The lastIndexOf() method returns the index of the last occurrence of a specified text in a string
+Example using it: The lastIndexOf() method returns the index of the last occurrence of a specified text in a string
 ```
-
 Method 3
 ```
-Name:
-Description:
-Example using it:
+Name:length
+Description:he length property returns the length of a string
+Example using it:var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var sln = txt.length;
 ```
 
 ## [License](LICENSE)
