@@ -28,23 +28,30 @@
 
 Method 1
 ```
-Name:
-Description:
+Name: length() method
+Description: it returns the length of the string
 Example using it:
+var c = 'Lama";
+length = c.length "
+so the length will be 4 
 ```
 
 Method 2
 ```
-Name:
-Description:
-Example using it:
+Name:indexOf() method
+Description: it return the position of the specific string 
+Example using it: var str = 'Good morning All of you ';
+var pos = indexOf("All");
+pos will be returns 13
 ```
 
 Method 3
 ```
-Name:
-Description:
-Example using it:
+Name: search() method 
+Description: it search for the  first position of given string
+Example using it: var myString = "Good Night All of you "
+var searchpos = myString.search('of');
+will return 16 
 ```
 
 ## [License](LICENSE)
