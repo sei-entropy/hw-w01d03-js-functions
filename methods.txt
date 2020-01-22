@@ -1,0 +1,40 @@
+//Method 1
+
+Name: String Length
+Description: 
+The length property returns the length of a string
+Example using it: 
+var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var sln = txt.length;
+
+The result of res will be:
+26 
+
+//Method 2
+
+Name: The slice() Method
+
+Description:
+ extracts a part of a string and returns the extracted part in a new string.
+
+Example using it:
+var str = "Apple, Banana, Kiwi";
+var res = str.slice(7, 13);
+
+The result of res will be:
+Banana
+
+
+//Method 3
+
+Name: The substring() Method
+Description:
+substring() is similar to slice().
+The difference is that substring() cannot accept negative indexes.
+
+Example using it: 
+var str = "Apple, Banana, Kiwi";
+var res = str.substring(7, 13);
+
+The result of res will be:
+Banana
