@@ -28,23 +28,26 @@
 
 Method 1
 ```
-Name:
-Description:
-Example using it:
+Name: string length
+Description: returns the length of a string
+Example using it: var name = "bedour";
+var len = name.length;
 ```
 
 Method 2
 ```
-Name:
-Description:
-Example using it:
+Name: finding a string in string
+Description: the indexOf() returns the index of (the position of) the first occurrence of a specified text in a string - staring from 0 index - and return -1 if the text is not found.
+Example using it: var name = "bedour Alshuaibi";
+var inx = name.indexOf('Alshuaibi');
 ```
 
 Method 3
 ```
-Name:
-Description:
-Example using it:
+Name: search for string in string 
+Description: The search() method searches a string for a specified value and returns the position of the match
+Example using it: var name = "bedour Alshuaibi";
+var ser = name.search('Alshuaibi');
 ```
 
 ## [License](LICENSE)
