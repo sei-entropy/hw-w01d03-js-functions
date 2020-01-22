@@ -28,23 +28,33 @@
 
 Method 1
 ```
-Name:
-Description:
+Name: toLowerCase()
+Description: A string is converted to lower case
 Example using it:
+let usrPicked = 'RocK';
+usrPicked = usrPicked.toLowerCase();
+console.log(usrPicked); // 'rock'
 ```
 
 Method 2
 ```
-Name:
-Description:
+Name: concat()
+Description: Joins two or more strings. Can be used instead of the plus operator.
 Example using it:
+let text1 = "Hello";
+let text2 = "World";
+let text3 = text1.concat(" ", text2);
+console.log(text3); // 'Hello World'
 ```
 
 Method 3
 ```
-Name:
-Description:
+Name: length
+Description: Returns the length of a string
 Example using it:
+let txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+let sln = txt.length; 
+console.log(sln); // 26
 ```
 
 ## [License](LICENSE)
