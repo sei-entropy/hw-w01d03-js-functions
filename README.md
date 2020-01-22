@@ -28,23 +28,26 @@
 
 Method 1
 ```
-Name:
-Description:
-Example using it:
+Name: indexOf()
+Description: get index of specific position
+Example using it: str = bader Ibrahim Almazrou
+            indexOf("Almazrou")
 ```
 
 Method 2
 ```
-Name:
-Description:
-Example using it:
+Name:lastIndexOf()
+Description: start from last means start from the end 
+Example using it: str = I am writing something in something 
+lastIndexOf(something)\\ it will print the index of last 'something' 
 ```
 
 Method 3
 ```
-Name:
-Description:
-Example using it:
+Name:search()
+Description: search method
+Example using it: search first index of specific str
+search(first) \\ => print 7
 ```
 
 ## [License](LICENSE)
