@@ -28,22 +28,23 @@
 
 Method 1
 ```
-Name:
-Description:
-Example using it:
+Name: 
+Description: 
+Example using it: 
+
 ```
 
 Method 2
 ```
-Name:
-Description:
-Example using it:
+Name: 
+Description:   
+Example using it: 
 ```
 
 Method 3
 ```
 Name:
-Description:
+Description: 
 Example using it:
 ```
 
