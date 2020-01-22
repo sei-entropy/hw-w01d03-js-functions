@@ -1,9 +1,9 @@
 
 // Q1 :
 
-var userSelection = prompt("Which one you going to pick? rock, paper or scissors?");
+const userSelection = prompt("Which one you going to pick? rock, paper or scissors?");
 
-var computerList = [
+const computerList = [
     "rock",
     "paper",
     "scissors"
