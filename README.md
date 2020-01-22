@@ -28,7 +28,7 @@
 
 Method 1
 ```
-Name:
+Name: 
 Description:
 Example using it:
 ```
