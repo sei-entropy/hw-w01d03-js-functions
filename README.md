@@ -28,23 +28,30 @@
 
 Method 1
 ```
-Name:
-Description:
+Name: indexOf()
+Description: The method searches for a string in a string. takes one paramter which is the string you want to find, and returns the index of it. Note: if you pass a non string value or the string wasn't found, the method will return -1.
 Example using it:
+str = 'Programming is fun :)';
+console.log(str.indexOf('fun'));
 ```
 
 Method 2
 ```
-Name:
-Description:
+Name: replace()
+Description: The replace method takes two parameters, the first one is the string to be replaced, and the second one is the replacing string. It will find the first occurrence of the first parameter in the string and replace it with the second parameter.
 Example using it:
+str = 'Hello World!';
+console.log(str.replace('World', 'Mashael'));
 ```
 
 Method 3
 ```
-Name:
-Description:
+Name: Convert to upper and lower case (toUpperCase(), toLowerCase())
+Description: The string that those two methods applied on converts the string to either upper case or lower case 
 Example using it:
+str = 'Hello World!';
+console.log(str.toUpperCase());
+console.log(str.toLowerCase());
 ```
 
 ## [License](LICENSE)
