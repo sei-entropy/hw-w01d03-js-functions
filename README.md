@@ -28,23 +28,30 @@
 
 Method 1
 ```
-Name:
-Description:
-Example using it:
+Name: concat()
+Description: joins two or more strings
+Example using it: var text1 = "Hello";
+var text2 = "World";
+var text3 = text1.concat(" ", text2); 
 ```
 
 Method 2
 ```
-Name:
-Description:
-Example using it:
+Name: slice() 
+Description:  extracts a part of a string and returns the extracted part in a new string.
+
+The method takes 2 parameters: the start position, and the end position .
+
+Example using it: var str = "Apple, Banana, Kiwi";
+var res = str.slice(7, 13);
 ```
 
 Method 3
 ```
-Name:
-Description:
-Example using it:
+Name: trim()
+Description: removes whitespace from both sides of a string
+Example using it: var str = "       Hello World!        ";
+alert(str.trim()); 
 ```
 
 ## [License](LICENSE)
