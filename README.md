@@ -17,34 +17,103 @@
     - Example: `playGame('rock') // Computer picked: paper. User picked: rock.  User lose.`
     - _**Hint:** Javascript includes a `Math.random` method._
 
+
+function determineWinner(userChoice, computerChoice) {
+if (userChoice === computerChoice) {
+  return 'It is a tie!';
+} // closing if tie clause!!!
+  
+else if (userChoice === 'rock') {
+  if (computerChoice === 'paper') {
+     return 'Computer Won!';
+  } else {
+     return 'Wow, You have won!';
+ } 
+}
+
+else if (userChoice === 'scissors') {
+  if (computerChoice === 'rock') {
+    return 'Computer won!';
+  } else {
+
+    return 'Wow, You have won!';
+
+  }
+} 
+else if (userChoice === 'paper') {
+  if (computerChoice === 'scissors') {
+    return 'Computer won!';
+  } else {
+
+
+    return 'Wow, You have won!';
+    
+  }
+ }
+};
+
+const startPlaying = () => {
+    let userChoice = getUserChoice('scissors');
+    const computerChoice = ComputerChoice();
+  		console.log(determineWinner(userChoice,computerChoice));
+}
+startPlaying();
+
+////////////////////////////
+
 2. Dice Roller
     - Create a file in this repo and name it `dice.js`
     - Write a function that chooses two random numbers (1-6) and returns them. It should also return the sum.
     - Example: `rollDice() // Dice rolled are 6 and 1.  Sum is 7`
     - BONUS: have your function take an argument of the # of dice to be rolled.
     - Example: `rollDice(3) // Dice rolled are 4, 2, and 7.  Sum is 13.`
+function rollDie(sides);
+  
+    if { sides = 6;
+    with(Math) return 1 + floor(random() * sides);
 
+  }
+else{
+
+  function rollDice(number, sides)}
+    const total = 0;
+    while(number-- > 0) total += rollDie(sides);
+    return total;
+  }
+  //////////////
 3.  Research 3 string methods and describe what they are used for and how to use them.  You can find string methods here https://www.w3schools.com/js/js_string_methods.asp
 
 Method 1
 ```
-Name:
-Description:
+Name:String Length
+Description:help us to find The length of any string
 Example using it:
+var myName = "Tahani";
+var sln = myName.length;
 ```
 
 Method 2
 ```
-Name:
-Description:
+Name:The slice() Method
+Description: this method helps any take out any part of the string var and return the taken part and put it in a new string.
 Example using it:
+
+<script>
+var stringNames = "Maha, Bilal, Tahani";
+var res = stringNames.slice(7,13);
+document.getElementById("demo").innerHTML = res; 
+</script>
+
+
 ```
 
 Method 3
 ```
-Name:
-Description:
+Name:Replacing String Content
+Description: this method helps to put a value that is defined to put it with another diffrent choosen value in the string
 Example using it:
+str = "Please visit our House!";
+var n = str.replace("House", "School");
 ```
 
 ## [License](LICENSE)
