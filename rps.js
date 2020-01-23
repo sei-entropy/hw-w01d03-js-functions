@@ -2,7 +2,8 @@
 // Rock, Paper, Scissors (watch the game)
 
 function random(str) {
-    return str[ Math.floor(Math.random()*str.length) ];
+	let randomNum = Math.floor(Math.random()*str.length) ;
+    return str[ randomNum ];
 }
 
 
