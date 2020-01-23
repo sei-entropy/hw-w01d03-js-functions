@@ -1,4 +1,4 @@
-const gameRps = function (pick)
+const gameRps = function (userPick)
 {
     
     let randomPick = Math.floor(Math.random() * 3);
@@ -12,16 +12,16 @@ const gameRps = function (pick)
     { 
         randomPick = 'scissors';
     }
-    let userPick = pick;
+    
     if ((userPick === 'rock') && (randomPick === 'scissors'))
     {
         return "You pick " + userPick + " and random pick is " + 
-        randomPick + " You lose!";
+        randomPick + " You win!";
 
     } else if ((userPick === 'scissors') && (randomPick === 'rock'))
     {
         return "You pick " + userPick + " and random pick is " + 
-        randomPick + " You win!";
+        randomPick + " You lose!";
 
     } else if ((userPick === 'rock') && (randomPick === 'paper'))
     {
@@ -42,6 +42,21 @@ const gameRps = function (pick)
     {
         return "You pick " + userPick + " and random pick is " + 
         randomPick + " You lose!";
+    }
+    else if ((userPick === 'paper') && (randomPick === 'paper'))
+    {
+        return "You pick " + userPick + " and random pick is " + 
+        randomPick + " it is a tie.";
+    }
+    else if ((userPick === 'rock') && (randomPick === 'rock'))
+    {
+        return "You pick " + userPick + " and random pick is " + 
+        randomPick + " it is a tie.";
+    }
+    else if ((userPick === 'scissors') && (randomPick === 'scissors'))
+    {
+        return "You pick " + userPick + " and random pick is " + 
+        randomPick + " it is a tie.";
     }
 
 
