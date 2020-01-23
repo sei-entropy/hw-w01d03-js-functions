@@ -58,7 +58,7 @@ function testFunction(name) {
   name  = " Raghad Alabdulwahab " ;  
 }
 testFunction.prototype.name = " Raghad Mohammed ";
-\\ will return Raghad Mohammed
+\\ will now name = Raghad Mohammed
 ```
 
 ## [License](LICENSE)
