@@ -8,34 +8,40 @@ const gameRps = function (pick)
     } else if (randomPick === 1)
     { 
         randomPick = 'paper';
-    }else (randomPick === 2)
+    }else if (randomPick === 2)
     { 
         randomPick = 'scissors';
     }
     let userPick = pick;
     if ((userPick === 'rock') && (randomPick === 'scissors'))
     {
-        return "You lose!"
+        return "You pick " + userPick + " and random pick is " + 
+        randomPick + " You lose!";
 
     } else if ((userPick === 'scissors') && (randomPick === 'rock'))
     {
-        return "You win!"
+        return "You pick " + userPick + " and random pick is " + 
+        randomPick + " You win!";
 
     } else if ((userPick === 'rock') && (randomPick === 'paper'))
     {
-        return "You lose!"
+        return "You pick " + userPick + " and random pick is " + 
+        randomPick + " You lose!";
 
     } else if ((userPick === 'paper') && (randomPick === 'rock'))
     {
-        return "You win!"
+        return "You pick " + userPick + " and random pick is " + 
+        randomPick + " You win!";
 
     } else if ((userPick === 'scissors') && (randomPick === 'paper'))
     {
-        return "You win!"
+        return "You pick " + userPick + " and random pick is " + 
+        randomPick + " You win!";
 
     }else if ((userPick === 'paper') && (randomPick === 'scissors'))
     {
-        return "You lose!"
+        return "You pick " + userPick + " and random pick is " + 
+        randomPick + " You lose!";
     }
 
 
