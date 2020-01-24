@@ -1,6 +1,6 @@
 const rollDice = function(){
-    const MyRandom1 = Math.floor(Math.random() * 6);
-    const MyRandom2 = Math.floor(Math.random() * 6);
+    const MyRandom1 = Math.floor(Math.random() * 7);
+    const MyRandom2 = Math.floor(Math.random() * 7);
     console.log("Dice rolled are "+MyRandom1 +" and "+MyRandom2);
     console.log("sum is "+ (MyRandom1+MyRandom2));
 }
@@ -9,27 +9,18 @@ rollDice();
 //bonus
 
 const rollDice1 = function (num) {
-    const MyRandom1 = Math.floor(Math.random() * 6);
-    const MyRandom2 = Math.floor(Math.random() * 6);
-    const MyRandom3 = Math.floor(Math.random() * 6);
-    console.log("Dice rolled are " + MyRandom1 + ", "+MyRandom2+" and " + MyRandom3);
-    console.log("sum is " + (MyRandom1 + MyRandom2 + MyRandom3));
+    let MyRandom = 0;
+    let myran =[];
+    console.log("Dice rolled are:");
+    for (let i =0 ; i <num ; i ++){
+        let random = Math.floor(Math.random() * 7);
+        MyRandom = MyRandom + random;
+        myran.push(random);
+       // console.log("ice rolled "+random);
+    }
+    //console.log("sum is " + (MyRandom));
+    
+    console.log("Dice rolled are " +myran + " and sum is :" +MyRandom);
 }
-rollDice1(3);
-///
+rollDice1(5);
 
-// Name: length()
-// Description: returns the length of a string
-// Example using it:txt.length;
-
-//
-// Name: search()
-// Description: searches a string for a specified value and returns the position of the match
-// Example using it: string.search("Word to find")
-
-//
-
-// Name: replace()
-// Description: replaces a specified value with another value in a string
-// Example using it: str = "Please visit Microsoft!";
-//var n = str.replace("Microsoft", "W3Schools");

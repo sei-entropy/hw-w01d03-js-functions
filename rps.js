@@ -1,22 +1,39 @@
-const playGame = function (rock){
-
-    const CompuChoose = Math.floor(Math.random() * 3);
-    let ComputerChoose = '';
-    //console.log(m);
+const playGame = function (userChoice){
+console.log("your choice is : " + userChoice);
+    let CompuChoose = Math.floor(Math.random() * 3);
     if (CompuChoose === 0) {
-        ComputerChoose = 'Rock';
-    }
+        CompuChoose = 'rock';}
     if (CompuChoose === 1) {
-        ComputerChoose = 'Paper';
-    }
+        CompuChoose = 'Paper';}
     if (CompuChoose === 2) {
-        ComputerChoose = 'Scissor';
+        CompuChoose = 'Scissor';}
+        console.log("computer choice :" + CompuChoose );
+    // if (rock !== CompuChoose){
+    //     console.log("win");}else{
+    //     console.log("lose");} 
+    if (userChoice === CompuChoose) { console.log("It's a tie!"); }
+    if (userChoice ==='rock'){
+        if(CompuChoose ==='paper'){
+            console.log("you lose !!");
+        }else{
+            console.log("you win");
+        }
     }
-    if (rock !== ComputerChoose){
-        console.log("win");
-    }else{
-        console.log("lose");
-    } 
+    if (userChoice === 'paper') {
+        if (CompuChoose === 'Scissor') {
+            console.log("you lose !!");
+        } else {
+            console.log("you win");
+        }
+    }
+    if (userChoice === 'Scissor') {
+        if (CompuChoose === 'rock') {
+            console.log("you lose !!");
+        } else {
+            console.log("you win");
+        }
+    }
+
 }
-playGame("Rock");
+playGame("rock");
 
