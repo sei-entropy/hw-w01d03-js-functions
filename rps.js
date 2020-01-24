@@ -6,17 +6,24 @@ function random(str) {
     return str[ randomNum ];
 }
 
-
+//let userScore = [ 'win', 'lose', 'tie' ];
 function playGame( userPicked ) {
-    let computerPicked = [ 'rock', 'paper', 'scissors' ];
-    let userScore = [ 'win', 'lose', 'tie' ];
+    let computerChooses = [ 'rock', 'paper', 'scissors' ];
 
-    let result = "Computer picked: "+ random(computerPicked);
-    result += "  User picked: " + userPicked;
-    result += "  User Score "+ random(userScore);
+    let computerPicked = random(computerChooses) ;
+
+    let result = "Computer picked:"+ computerPicked ;
+    result += "  User picked:" + userPicked ;
+    if (computerPicked == userPicked ) {
+        result += " User tie " ;
+    }else if (computerPicked == 'rock ' &&  userPicked == 'scissors' ) {
+        result += " User lose " ;
+    }else if (computerPicked == 'scissors' &&  userPicked == 'paper' ) {
+        result += " User lose " ;
+    }else if (computerPicked == 'paper' &&  userPicked == 'rock' ) {
+        result += " User lose " ;
+    }else{ result += " User win " ; }
+    
 
      return result
 }
-
-
-
