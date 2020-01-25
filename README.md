@@ -28,23 +28,24 @@
 
 Method 1
 ```
-Name:
-Description:
-Example using it:
+Name:length()
+Description:returns the length of a string
+Example using it: txt.length;
 ```
 
 Method 2
 ```
-Name:
-Description:
-Example using it:
+Name: search()
+Description:searches a string for a specified value and returns the position of the match
+Example using it:string.search("Word to find")
 ```
 
 Method 3
 ```
-Name:
-Description:
-Example using it:
+Name:replace()
+Description:replaces a specified value with another value in a string
+Example using it: str = "Please visit Microsoft!";
+//var n = str.replace("Microsoft", "W3Schools");
 ```
 
 ## [License](LICENSE)
