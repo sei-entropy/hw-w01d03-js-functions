@@ -1,13 +1,24 @@
-var Player1 = prompt ("Player1: rock, paper, scissors?");
-var Player2 = prompt ("Player2: rock, paper, scissors?");
+const playGame = function (userChoice) {
+    userChoice = userChoice.toUpperCase();
 
-if (P1==="rock" && P2==="rock"||P1==="paper"&&P2==="paper"||P1==="scissors"&&P2==="scissors") {
-console.log ("Tie!");
-} else {
-if (P1==="rock"&&P2==="scissors"||P1==="paper"&&P2==="rock"||P1==="scissors"&&P2==="paper") {
-console.log ("Player1 Wins!");
-} else {
-console.log ("Player2 lose!");
-}
-}
-Game(PlayerOne,PlayerTwo);
+    let computerChoice = Math.floor(Math.random() * 3) + 1;
+    if( computerChoice == 1) {
+        computerChoice = 'Rock';
+    } else if(computerChoice ==2) {
+        computerChoice = 'Paper';
+    } else {
+        computerChoice = 'SScissors';
+    }
+
+    let message = "Computer chose: " + computerChoice + ". User chose: " + userChoice;
+    
+    if (userChoice === computerChoice) {
+        return message += ". User ties";
+    } if ( (userChoice === 'Rock' && computerChoice === "Scissors") ||
+       (userChoice === 'Scissors' && computerChoice === "Paper") ||
+       (userChoice === 'Paper' && computerChoice === "Rock")) {
+        return message += ". User wins";
+    } else {
+        return message += ". User Loses";
+    }
+};
