@@ -32,21 +32,21 @@ console.log(name.toUpperCase());
 //Dice Roller
 
 const rollDice=function (Roll){
-    let min=1;
-    let max=6;
     let number=[];
-
+num=0;
 
    if(Roll>1){
 
     for(i=1;i<=Roll;i++){
 
-    let num1=Math.random() * (max- min) + min;
+    let num1=Math.floor(Math.random()*6)+1;
     number.push(num1);
 
+    num+=num1
+
 }
-let sum=number.reduce((a, b) => a + b, 0);
-console.log('Dice rolled are '+number+'. Sum is '+sum);
+number.push(num)
+return number ;
     };
 };
 
@@ -95,4 +95,4 @@ const playGame =function (user_choice){
                 console.log('Computer picked: '+ computer_choice+'. User picked: '+user_choice+'. User win');
            
     }
-};
+}};
