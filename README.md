@@ -28,24 +28,33 @@
 
 Method 1
 ```
-Name:
-Description:
+Name: lString Length 
+Description: returns the length of a string
 Example using it:
 ```
+let nameLength = 'huda alismail';
+console.log(nameLength.length);
+13
+
 
 Method 2
 ```
-Name:
-Description:
+Name: Replacing String
+Description: replaces a specified value with another value in a string
 Example using it:
 ```
+let xx = 'I love green';
+console.log('replace green with blue')
+console.log(xx.replace('green','blue'));
 
 Method 3
 ```
-Name:
-Description:
+Name:toUpperCase
+Description: convert string to uppercase
 Example using it:
 ```
+let name = 'huda';
+console.log(name.toUpperCase());
 
 ## [License](LICENSE)
 
