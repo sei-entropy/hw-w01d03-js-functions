@@ -1,27 +1,16 @@
-const getUserChoice =() =>{
-    const randomeNum = (Math.floor(Math.random() *3))
-    if (randomeNum === 0){
-        return 'Rock';
-      }
-      else if (randomeNum === 1){
-        return 'Paper';
-      }
-      else if (randomeNum === 2){
-      return 'scissors';
-      }
-        }
-    console.log(getUserChoice());
+const thelistOfchoice=['rock','scissors','paper'];
+function playGame(userChoice) {
+var computerChoice =Math.floor(Math.random()*3);
+computerChoice=thelistOfchoice[computerChoice]
+  if (userChoice === computerChoice) {
+    return 'The game is a tie!';
+  } 
     
-    const getComputerChoice =() =>{
-    const randomeNum = (Math.floor(Math.random() *3))
-    if (randomeNum === 0){
-        return 'Rock';
-      }
-      else if (randomeNum === 1){
-        return 'Paper';
-      }
-      else if (randomeNum === 2){
-      return 'scissors';
-      }
-        }
-    console.log(getComputerChoice());
+  else if (userChoice === 'rock' || 'paper' || 'scissors') {
+    if (computerChoice === 'rock') {
+       return 'You won!';
+    } else {
+       return 'your lose!';
+    } 
+   }
+  }
